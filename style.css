@@ -38,6 +38,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #0D4373;
+  color: #FFFFFF;
   border-radius: 20px;
   border: 3px solid rgb(255, 255, 255);
 }
@@ -121,8 +122,13 @@ section .content p {
   text-decoration: none;
 }
 
+a.button {
+  background-color: #0D4373;
+  color: white;
+}
+
 .button:hover {
-  background-color: white;
+  background-color: black;
   color: #0D4373;
 }
 
@@ -175,9 +181,9 @@ nav .wrapper {
 }
 
 nav.scroll {
-  background: white;
+  background-color: white;
   color: #0D4373;
-  box-shadow: 10px black;
+  box-shadow: 1px 1px 10px 1px #0D4373;
 }
 
 nav button {
@@ -317,17 +323,19 @@ body.menu-expanded button path {
 }
 
 #home img {
-  width: 26.4rem;
+  width: 35.4rem;
+  height: 53.4rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
+  margin-top: 10%;
 }
 
 #home .stats {
   width: 100%;
   padding-block: 4rem;
   margin-inline: auto;
-
+  margin-top: -3%;
   background-color: var(--brand-beige);
   border: 1px solid var(--brand-ligth);
   border-radius: 0.6rem;
@@ -723,6 +731,7 @@ footer .social-links {
   /*===== FOOTER ==========================*/
   footer {
     padding-block: 8rem;
+    background-color: #0D4373;
   }
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
