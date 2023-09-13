@@ -17,25 +17,25 @@ function activateMenuAtCurrentSection(section) {
 
   //verificar se a sessão passou da linha
   // quais dados vou precisar
+  // o topo da sessão
 
-  //o topo da seção
   const sectionTop = section.offsetTop
 
-  // a altura da sesao
+  // a altura da sessão
   const sectionHeight = section.offsetHeight
 
-  // o topo da seção chegou ou ultrapassou a linha alvo
+  // o topo da sessão chegou ou ultrapassou a linha alvo
   const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
   //verificar se a base está abaixo da linha alvo
 
-  //a seçao termina onde?
+  //a sessão termina onde?
   const sectionEndsAt = sectionTop + sectionHeight
 
-  // o final da seção passou da linha alvo
+  // o final da sessão passou da linha alvo
   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
-  //limites da seção
+  //limites da sessão
 
   const sectionBoundaries =
     sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline

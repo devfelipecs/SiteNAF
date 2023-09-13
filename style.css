@@ -5,7 +5,8 @@
 }
 
 :root {
-  font-size: 62.5%; /* 1 rem = 10px */
+  font-size: 62.5%;
+  /* 1 rem = 10px */
 
   --nav-height: 7.2rem;
 }
@@ -19,6 +20,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 body {
   font-family: 'DM Sans';
   font-size: 1.6rem;
@@ -48,11 +50,13 @@ body::-webkit-scrollbar-thumb {
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
+
 .logo_NAF {
   width: 220px;
   height: 120px;
   margin-left: 40px;
 }
+
 ul {
   list-style: none;
 }
@@ -144,6 +148,7 @@ a.button {
 #services .card circle {
   fill: white;
 }
+
 #navigation .logo path[fill*='#00856F'],
 #backToTopButton circle {
   fill: #0D4373;
@@ -203,7 +208,7 @@ body.menu-expanded {
   overflow: hidden;
 }
 
-body.menu-expanded > :not(nav) {
+body.menu-expanded> :not(nav) {
   visibility: hidden;
 }
 
@@ -214,11 +219,16 @@ body.menu-expanded .open-menu {
   visibility: hidden;
 }
 
+.close-menu {
+  color: #0D4373;
+}
+
 body.menu-expanded .menu,
 body.menu-expanded .close-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .menu {
   transform: translateY(100%);
 }
@@ -424,6 +434,7 @@ body.menu-expanded button path {
   align-items: center;
   gap: 0.8rem;
 }
+
 /*=====FOOTER==========================*/
 footer {
   background-color: var(--primary-color);
@@ -433,6 +444,7 @@ footer {
 
   color: white;
 }
+
 footer .logo {
   display: inline-block;
   margin-bottom: 2.4rem;
@@ -442,6 +454,7 @@ footer .logo svg {
   width: 23.6rem;
   height: 3.1rem;
 }
+
 footer .logo path {
   fill: white;
 }
@@ -477,6 +490,7 @@ footer .social-links {
 
 /*===== RESPONSIVO ==========================*/
 @media (min-width: 1024px) {
+
   /*===== GERAL ==========================*/
   body {
     overflow: auto;
@@ -624,6 +638,7 @@ footer .social-links {
   nav#navigation.scroll .menu li a:hover {
     opacity: 1;
   }
+
   nav#navigation.scroll .menu a.button.active,
   nav#navigation.scroll .menu a.button:hover {
     background-color: var(--primary-color);
@@ -669,7 +684,7 @@ footer .social-links {
     gap: 0;
   }
 
-  #home .stats .stat + .stat {
+  #home .stats .stat+.stat {
     border-left: 1px solid var(--primary-color);
   }
 
@@ -701,6 +716,7 @@ footer .social-links {
     width: 30%;
     flex-grow: 1;
   }
+
   /*===== ABOUT ==========================*/
 
   #about .wrapper {
@@ -733,6 +749,7 @@ footer .social-links {
     padding-block: 8rem;
     background-color: #0D4373;
   }
+
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
@@ -740,12 +757,15 @@ footer .social-links {
 
   footer .col-a {
     align-self: center;
+    background-color: #0D4373;
   }
 
   footer .col-b {
     align-self: center;
     justify-self: flex-end;
+    background-color: #0D4373;
   }
+
   footer p {
     margin-bottom: 0;
   }
