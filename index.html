@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <title>NAF</title>
 </head>
 
@@ -17,15 +19,16 @@
   <nav id="navigation">
     <div class="wrapper">
       <a class="logo" href="#home">
-        <img src="assets/logo_NAF.png" alt="" class="logo_NAF">
+        <img src="assets/LOGO-removebg-preview.png" alt="" class="logo_NAF">
       </a>
-      <div class="menu">
 
+      <div class="menu">
         <ul>
           <li><a onclick="closeMenu()" href="#home">Início</a></li>
           <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
-          <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-          <li><a onclick="closeMenu()" href="#doacao">Nos ajude com uma doação!</a></li>
+          <li><a onclick="closeMenu()" href="#services">Atividades</a></li>
+          <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+          <li><a onclick="closeMenu()" href="#doacao">Faça sua doação!</a></li>
         </ul>
 
         <ul class="social-links">
@@ -82,18 +85,20 @@
     </div>
   </nav>
 
+  <!-- Home -->
   <section id="home">
     <div class="wrapper">
       <div class="col-a">
         <header>
-          <h1 style="text-align: center;">OLÁ, BEM VINDO A </h1>
+          <h1 style="text-align: center;">OLÁ, BEM VINDO AO </h1>
           <h1 class="h1_naf" style="text-align: center;">N.A.F. Lar de Maria 👋</h1>
         </header>
 
         <div class="content">
           <p>
             O Núcleo Assistencial Fraterno Lar de Maria é uma sociedade civil, religiosa, filantrópica, sem fins
-            lucrativos localizada na região leste de São Paulo.
+            lucrativos fundada em 30 de Janeiro de 1997, localizado na cidade de São Paulo, em uma região extremamente
+            carente de recursos materiais.
           </p>
         </div>
       </div>
@@ -121,11 +126,39 @@
     </div>
   </section>
 
+  <!-- Sobre -->
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Sobre Nós</h4>
+          <h2>Entenda quem somos e por que existimos</h2>
+        </header>
+        <div class="content">
+          <p>O Núcleo Assistencial Fraterno Lar de Maria é uma sociedade civil, religiosa, filantrópica, sem fins
+            lucrativos fundada em 30 de Janeiro de 1997, localizado na cidade de São Paulo, em uma região extremamente
+            carente de recursos materiais.</p>
+
+          <p>Temos como objetivos: a valorização e o desenvolvimento das potencialidades do ser humano através da
+            prática da caridade, da assistência social, da promoção humana, do estudo do Evangelho de Jesus à Luz do
+            Espiritismo de Allan Kardec, buscando auxiliar crianças, jovens e demais membros da sociedade.</p>
+
+          <p>Missão: "Educar o ser no conhecimento pleno de todas as suas potencialidades, permitindo melhor interação
+            consigo, com o outro e com o meio."</p>
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="./assets/Frente_NAF.jpeg" alt="doutor feliz segurando uma prancheta com pacientes" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Trabalhos -->
   <section id="services">
     <div class="wrapper">
       <header>
-        <h4>Trabalhos</h4>
-        <h2>Quais são os nossos trabalhos?</h2>
+        <h4>ATIVIDADES</h4>
+        <h2>Quais são as nossas atividades?</h2>
       </header>
 
       <div class="cards">
@@ -168,35 +201,42 @@
           </p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="about">
-    <div class="wrapper">
-      <div class="col-a">
-        <header>
-          <h4>Sobre Nós</h4>
-          <h2>Entenda quem somos e por que existimos</h2>
-        </header>
-        <div class="content">
-          <p>O Núcleo Assistencial Fraterno Lar de Maria é uma sociedade civil, religiosa, filantrópica, sem fins
-            lucrativos fundada em 30 de Janeiro de 1997, localizado na cidade de São Paulo, em uma região extremamente
-            carente de recursos materiais.</p>
+      <!-- DATAS -->
+      <div class="cards">
+        <div class="card">
+          <ul class="list-group">
+            <p style="text-align: center; font-size: larger; font-weight: bold;" class="list-group-item active">SEGUNDA-FEIRA</p>
+            <p class="list-group-item"><b>10:00 - 11:30: </b> REFORÇO ESCOLAR E ALFABETIZAÇÃO</p>
+            <p class="list-group-item"><b>13:00 - 14:30: </b> REFORÇO ESCOLAR E ALFABETIZAÇÃO</p>
+            <p class="list-group-item"><b>13:30 - 15:00: </b> OFICINA DE VIOLÃO / CANTO (+8 ANOS)</p>
+            <p class="list-group-item"><b>14:00 - 15:00: </b> ARTESANATO / GRUPO DE MÃES</p>
+            <p class="list-group-item"><b>14:30 - 16:00: </b> JOGOS E ATIVIDADES LÚDICAS</p>
+            <p class="list-group-item"><b>17:00 - 18:00: </b> ARTE CIDADANIA (12 A 16 ANOS)</p>
+          </ul>
+        </div>
 
-          <p>Temos como objetivos: a valorização e o desenvolvimento das potencialidades do ser humano através da
-            prática da caridade, da assistência social, da promoção humana, do estudo do Evangelho de Jesus à Luz do
-            Espiritismo de Allan Kardec, buscando auxiliar crianças, jovens e demais membros da sociedade.</p>
+        <div class="card">
+          <p style="text-align: center; font-size: larger; font-weight: bold;" class="list-group-item active">TERÇA-FEIRA</p>
+          <p class="list-group-item"><b>10:00 - 11:30: </b> REFORÇO ESCOLAR E ALFABETIZAÇÃO</p>
+          <p class="list-group-item"><b>13:00 - 14:30: </b> REFORÇO ESCOLAR E ALFABETIZAÇÃO</p>
 
-          <p>Missão: "Educar o ser no conhecimento pleno de todas as suas potencialidades, permitindo melhor interação
-            consigo, com o outro e com o meio."</p>
+          <p style="text-align: center; font-size: larger; font-weight: bold; margin-top: 30px;" class="list-group-item active">QUARTA-FEIRA</p>
+          <p class="list-group-item"><b>10:00 - 14:00: </b> ATENDIMENTO AO PÚBLICO</p>
+        </div>
+
+        <div class="card">
+          <p style="text-align: center; font-size: larger; font-weight: bold;" class="list-group-item active">SÁBADO</p>
+          <p class="list-group-item"><b>10:00 - 11:30: </b> </p>
+            <li class="list-group-item">EVANGELIZAÇÃO INFANTIL</li>
+            <li class="list-group-item">INCENTIVO A LEITURA</li>
+            <li class="list-group-item">ENCONTRO DE MÃES</li>
+          <p class="list-group-item"> <b>TURMAS DE:</b> 3 A 8 ANOS E 9 A 11 ANOS</p>
         </div>
       </div>
-      <div class="col-b">
-        <img src="./assets/Faixada_NAF.png" alt="doutor feliz segurando uma prancheta com pacientes" />
-      </div>
-    </div>
   </section>
 
+  <!-- Contato -->
   <section id="contact">
     <div class="wrapper">
       <div class="col-a">
@@ -246,6 +286,81 @@
     </div>
   </section>
 
+  <!-- Doação -->
+  <section id="doacao" class="doacao">
+
+    <div class="block mb-27 divPix">
+      <div class="aviso">
+        <p>Atenção! Após digitar nossa chave PIX, confirme o Nosso Nome e CNPJ:</p>
+        <p>Nome: N.A.F. Lar de Maria</p>
+        <p>CNPJ: 02.000.173/0001-35</p>
+      </div>
+
+      <div class="d-flex align-items-center mb-14" style="text-align: center;">
+        <i class="me-9"><img src="https://rifa321.me/theme2/images/2023/brand-pix.png"
+            style="width: 54px; margin-right: 10px;"></i>
+        <p class="mb-0" style="font-weight: bold;"><span class="fw-bold">PIX</span> (Manual)</p>
+      </div>
+
+      <p class="fw-semibold text-dark fs-18 mb-17" style="font-weight: bold; margin-top: 10px;">Como realizar a Doação?
+      </p>
+
+      <div class="d-flex align-items-center mb-19">
+        <button class="btn btn-primary passos"
+          style="border-radius: 50%; width: 30px; height: 30px; font-size: medium; font-weight: bold; margin-right: 10px; margin-bottom: 10px; margin-top: 10px; text-align: center;">1</button>
+        <p class="fs-13 text-dark mb-0"><b>Copie a chave pix abaixo</b></p>
+      </div>
+
+      <p class="fs-12 mb-9 text-dark">Tipo de chave pix: <span class="fw-bold text-primary"><b>CNPJ</b></span></p>
+
+      <div class="d-flex mb-21">
+        <input type="text" class="form-control form-control-lg me-8"
+          style="padding: 5px; font-size: medium; font-weight: bold; margin-right: 10px; width: 185px;"
+          value="02.000.173/0001-35" readonly id="cnpj">
+
+        <button class="btn btn-primary" data-clipboard-text="" id="botao" style="font-size: medium;"
+          onclick="copyToClipboard()"><b>Copiar</b></button>
+      </div>
+
+      <div class="d-flex align-items-center mb-19">
+        <button class="btn btn-primary passos"
+          style="border-radius: 50%; width: 30px; height: 30px; font-size: medium; font-weight: bold; margin-right: 10px; margin-bottom: 10px; margin-top: 10px; text-align: center;">2</button>
+        <p class="fs-13 text-dark mb-0 " style="padding: 5px;">Após copiar a chave pix, vá até o aplicativo do seu
+          <b>banco</b> e escolha a opção <b>pagar com PIX.</b></p>
+      </div>
+
+      <div class="d-flex align-items-center mb-19">
+        <button class="btn btn-primary passos"
+          style="border-radius: 50%; width: 30px; height: 30px; font-size: medium; font-weight: bold; margin-right: 10px; margin-bottom: 10px; margin-top: 10px; text-align: center;">3</button>
+        <p class="fs-13 text-dark mb-0 " style="padding: 5px;">Escolha a opção pagar com pix <b>CNPJ,</b>
+          <b>cole</b> a chave pix e depois digite o valor da doação e realize o pagamento.
+        </p>
+      </div>
+
+      <div class="d-flex align-items-center mb-19">
+        <button class="btn btn-primary passos"
+          style="border-radius: 50%; width: 30px; height: 30px; font-size: medium; font-weight: bold; margin-right: 10px; margin-bottom: 10px; margin-top: 10px; text-align: center;">4</button>
+        <p class="fs-13 text-dark mb-0 " style="padding: 5px;">Quando o pagamento for realizado, envie o
+          comprovante de pagamento.</p>
+      </div>
+      <hr />
+
+      <div class="d-grid d-gap2" style="display: flex; justify-content: center; align-items: center;">
+        <a href="https://api.whatsapp.com/send?phone=5511940318068&text=Olá, fiz uma doação via pix pelo site e estou compartilhando o comprovante!"
+          target="_blank"
+          class="btn position-relative d-flex align-items-center justify-content-center fs-14 border-radius-4 py-10"
+          style="background-color: #1FC97D;color: #fff; width: 300px; height: 40px; font-size: large; margin-bottom: -20px;">
+          <i class="position-absolute" style="left: 18.5px;"><img
+              src="https://rifa321.me/theme2/images/2023/icon-whatsapp-light.png" class="img-fluid"
+              style="width: 23px;"></i>
+          <b>Enviar comprovante</b>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer style="background-color: #0D4373; color: white;">
     <div class="wrapper">
       <div class="col-a">

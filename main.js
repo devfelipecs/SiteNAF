@@ -15,7 +15,7 @@ function onScroll() {
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
 
-  //verificar se a sessão passou da linha
+  // verificar se a sessão passou da linha
   // quais dados vou precisar
   // o topo da sessão
 
@@ -85,4 +85,13 @@ ScrollReveal({
     #services .card,
     #about,
     #about header,
-    #about content`)
+    #about content`
+)
+
+const input = document.querySelector('input')
+
+function copyToClipboard() {
+  navigator.clipboard.writeText(input.value).then(() => {
+    alert('Chave Pix Copiada!');
+  })
+}
