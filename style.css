@@ -317,25 +317,22 @@ body.menu-expanded button path {
 /*=====HOME==========================*/
 
 #home {
-  padding-block: 0;
-  padding-top: calc(7rem + var(--nav-height));
+  padding-top: calc(7.2rem + var(--nav-height));
 }
 
 #home::before {
-  content: "";
   width: 100%;
   height: calc(76% + var(--nav-height));
   background-color: white;
   display: block;
-
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
-#home .button {
-  margin-inline: auto;
+#home h1 {
+  margin-top: 40px;
 }
 
 #home p {
@@ -343,23 +340,20 @@ body.menu-expanded button path {
   line-height: 150%;
   font-weight: 400;
   color: #0d4373;
-  margin-bottom: 3.2rem;
 }
 
 #home img {
-  width: 35.4rem;
-  height: 53.4rem;
-  display: block;
-  margin-inline: auto;
-  object-position: 0 2rem;
-  margin-top: 10%;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
 }
 
 #home .stats {
   width: 100%;
   padding-block: 4rem;
   margin-inline: auto;
-  margin-top: -3%;
   background-color: var(--brand-beige);
   border: 1px solid var(--brand-ligth);
   border-radius: 0.6rem;
@@ -367,6 +361,7 @@ body.menu-expanded button path {
   flex-direction: column;
   justify-content: center;
   gap: 6rem;
+  text-align: center;
 }
 
 #home .stat h3 {
@@ -374,8 +369,6 @@ body.menu-expanded button path {
   font-weight: bold;
   color: var(--headline);
   line-height: 130%;
-
-  margin-bottom: 0.4rem;
 }
 
 #home .stat p {
@@ -385,15 +378,35 @@ body.menu-expanded button path {
   line-height: 150%;
 }
 
+#home .avisoTL {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: small;
+  padding: 5px;
+  max-width: 75vw;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+/*=====about=========================*/
+#about p {
+  margin: 20px;
+}
+
+#about img {
+  margin-top: 100px;
+}
+
 /*=====SERVICES==========================*/
 
 #services h2 {
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 #services header {
-  margin-top: 8%;
-  margin-bottom: 3.2rem;
+  margin-top: 1%;
+  margin-bottom: 1rem;
 }
 
 #services .cards {
@@ -403,61 +416,80 @@ body.menu-expanded button path {
 }
 
 .card {
-  padding: 2.4rem;
-  text-align: left;
-
-  background: white;
-
+  padding: 2rem;
+  text-align: center;
   border: 1px solid hsl(calc(var(--hue) - 22), 23%, 89%);
   border-radius: 0.6rem;
+  margin: -10px;
 }
 
 #services .card h3 {
-  margin-block: 1.6rem;
+  margin-block: 1em;
+  font-size: large;
 }
 
-  
-/*=====ABOUT==========================*/
-#about {
+/*=====AGENDA==========================*/
+#agenda h2 {
+  margin-bottom: 2rem;
+}
+
+#agenda header {
+  margin-top: 1%;
+  margin-bottom: 1rem;
+}
+
+#agenda .cards {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+#agenda .card {
+  text-align: left;
+  border: none;
+  max-width: 375px;
+}
+
+#agenda h2 {
+  margin-inline: auto;
+}
+
+#agenda .cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+#agenda .card {
+  flex-grow: 1;
+}
+
+#agenda {
+  margin-top: -40px;
+  margin-bottom: 100px;
   text-align: left;
   background-color: var(--brand-beige);
 }
 
-#about header {
+#agenda p {
+  font-size: 1.2em;
+}
+#agenda li {
+  font-size: 1.2em;
+}
+
+#agenda header {
   margin-top: 8%;
   margin-bottom: 3.2rem;
 }
 
-#about h2 {
+#agenda h2 {
   margin-bottom: 2.4rem;
 }
 
-#about .content p {
+#agenda .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
-}
-
-/*=====CONTACT==========================*/
-#contact {
-  text-align: left;
-}
-
-#contact header {
-  margin-top: 8%;
-  margin-bottom: 3.2rem;
-}
-
-#contact ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  margin-bottom: 3.2rem;
-}
-
-#contact ul li {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
 }
 
 /*=====Doação==========================*/
@@ -486,6 +518,30 @@ body.menu-expanded button path {
   font-size: medium;
   margin: 10px;
   padding: 30px;
+}
+
+/*=====CONTACT==========================*/
+#contact {
+  text-align: left;
+  margin-top: -100px;
+}
+
+#contact header {
+  margin-top: 8%;
+  margin-bottom: 3.2rem;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+#contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 /*=====FOOTER==========================*/
@@ -752,6 +808,22 @@ footer .social-links {
     width: 42rem;
   }
 
+  /*===== ABOUT ==========================*/
+
+  #about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: "B A";
+    gap: 6.7rem;
+  }
+
+  #about col-a {
+    align-self: center;
+  }
+
+  #about .content p {
+    margin-bottom: 0;
+  }
+
   /*===== SERVICES ==========================*/
   #services h2 {
     width: 47rem;
@@ -767,22 +839,6 @@ footer .social-links {
   #services .card {
     width: 30%;
     flex-grow: 1;
-  }
-
-  /*===== ABOUT ==========================*/
-
-  #about .wrapper {
-    grid-template-columns: 48rem 1fr;
-    grid-template-areas: "B A";
-    gap: 6.7rem;
-  }
-
-  #about col-a {
-    align-self: center;
-  }
-
-  #about .content p {
-    margin-bottom: 0;
   }
 
   /*===== CONTACT ==========================*/
